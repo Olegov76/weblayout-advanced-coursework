@@ -1,0 +1,88 @@
+<header class="header">
+  <div class="header__one">
+    <div class="container">
+      <div class="header__one-content flex">
+        <div class="flex header__select-box">
+          <span class="header__select--text">Ваш регион:</span>
+          <select class="header__select" name="select" id="selectCustom">
+            <option value="Москва" selected>Москва</option>
+            <option value="Казань">Казань</option>
+            <option value="Уфа">Уфа</option>
+            <option value="Пермь">Пермь</option>
+          </select>
+        </div>
+        <div class="header__rigth flex">
+          <a class="header__phone--link" href="tel:+74958854547"><svg class="header__phone--icon">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            +7 (495) 885-45-47
+          </a>
+          <nav>
+            <ul class="header__nav--list ul__reset flex">
+              <li class="header__list-itams"><a class="header__nav-link" href="#">О компании</a></li>
+              <li class="header__list-itams"><a class="header__nav-link" href="#">Гарантия и возврат</a></li>
+              <li class="header__list-itams"><a class="header__nav-link" href="#">Корпоративным клиентам</a></li>
+              <li class="header__list-itams"><a class="header__nav-link" href="#">Дизайн-решение</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__too container flex">
+    <svg class="header__logo">
+      <use xlink:href="img/sprite.svg#header__logo"></use>
+    </svg>
+    <nav class="header__nav-too">
+      <ul class="header__nav-list2 ul__reset flex">
+        <li class="header__list-items2"><a class="header__nav-link2" href="#">Каталог</a></li>
+        <li class="header__list-items2"><a class="header__nav-link2" href="#">Магазины</a></li>
+        <li class="header__list-items2"><a class="header__nav-link2" href="#">Шоу-рум</a></li>
+        <li class="header__list-items2"><a class="header__nav-link2" href="#">Оплата и доставка</a></li>
+        <li class="header__list-items2"><a class="header__nav-link2" href="#">Дисконт</a></li>
+        <li class="header__list-items2"><a class="header__nav-link2" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__three flex container">
+    <div class="header__three-left flex">
+      <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <span class="header__span-search">
+          <svg class="header__search">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg></span>
+        <input class="header__input-search" type="search" placeholder="Я хочу купить">
+        <button class="header__form-btn btn-reset">
+          <svg class="header__form-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="header__select-too-box">
+        <select class="header__select-too" name="select">
+          <option value="Диваны">Диваны</option>
+          <option value="Кресла">Кресла</option>
+          <option value="Пуфы">Пуфы</option>
+          <option value="Кровати">Кровати</option>
+          <option value="Тумбы">Тумбы</option>
+          <option value="Комоды">Комоды</option>
+          <option value="Стулья">Стулья</option>
+          <option value="Столы">Столы</option>
+          <option value="Аксессуары">Аксессуары</option>
+        </select>
+      </div>
+    </div>
+    <div class="header__three-left">
+      <a class="header__three-user" href="#">
+        <svg class="header__form-user">
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
+      </a>
+      <a class="header__three-basket" href="#">
+        <svg class="header__form-basket">
+          <use xlink:href="img/sprite.svg#basket"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>

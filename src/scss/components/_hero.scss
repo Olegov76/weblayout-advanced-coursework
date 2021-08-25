@@ -1,0 +1,43 @@
+.hero {
+  margin-bottom: 70px;
+
+  .swiper-container {
+    height: 400px;
+    max-width: 1920px;
+  }
+
+  &__slide-size {
+    padding-top: 80px;
+  }
+
+  &__slide-foto1 {
+    background: url(../../img/hero__foto-desk1.jpg) no-repeat;
+  }
+
+  &__slide-foto2 {
+    background: url(../../img/hero__foto-desk2.jpg) no-repeat;
+  }
+
+  &__slide-foto3 {
+    background: url(../../img/hero__foto-desk3.jpg) no-repeat;
+  }
+
+  &__title {
+    width: 500px;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-grey);
+    margin-bottom: 49px;
+  }
+
+  &__title-white {
+    color: var(--color-white);
+  }
+
+  &__btn {
+    padding: 22px 50px;
+    border-radius: 10px;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+  }
+}

@@ -1,0 +1,30 @@
+.reting {
+  &__card {
+    position: relative;
+    grid-column: 3 span;
+    background-color: var(--color-grey_ligth);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 33px;
+    height: 420px;
+  }
+
+  &__star {
+    background: url(../../img/star.svg) no-repeat;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+  }
+
+  &__star-text {
+    color: var(--color-secondary);
+    font-size: 16px;
+  }
+
+  &__card-foto {
+    position: absolute;
+    bottom: 229px;
+    left: 50%;
+    margin-left: -45%;
+  }
+}
