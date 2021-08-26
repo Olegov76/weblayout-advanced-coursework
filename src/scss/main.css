@@ -223,20 +223,12 @@
   background-color: var(--color-purple);
 }
 
-.offers__title {
-  font-weight: 400;
-  font-size: 32px;
-  margin-bottom: 26px;
-  color: var(--color-black);
+.offers {
+  margin-bottom: 70px;
 }
 
-.offers__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  -webkit-column-gap: 32px;
-          column-gap: 32px;
+.offers__title {
+  font-size: 32px;
 }
 
 .offers__card-small {
@@ -331,5 +323,34 @@
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+.reting__card {
+  position: relative;
+  grid-column: 3 span;
+  background-color: var(--color-grey_ligth);
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-top: 33px;
+  height: 420px;
+}
+
+.reting__star {
+  background: url(../../img/star.svg) no-repeat;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+}
+
+.reting__star-text {
+  color: var(--color-secondary);
+  font-size: 16px;
+}
+
+.reting__card-foto {
+  position: absolute;
+  bottom: 229px;
+  left: 50%;
+  margin-left: -45%;
 }
 /*# sourceMappingURL=main.css.map */

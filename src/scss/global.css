@@ -88,6 +88,13 @@ p {
   padding: 0;
 }
 
+.site__title {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 26px;
+  color: var(--color-black);
+}
+
 img {
   max-width: 100%;
 }
@@ -149,5 +156,13 @@ a {
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
 }
 /*# sourceMappingURL=global.css.map */
