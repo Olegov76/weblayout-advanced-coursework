@@ -11,9 +11,9 @@
     justify-content: space-between;
   }
 
-  &__select--text {
+  &__select-text {
     font-size: 16px;
-    color: (--var-black);
+    color: var(--color-black);
   }
 
   &__rigth {
@@ -64,7 +64,7 @@
     align-items: center;
   }
 
-  &__ &__list-items2:not(:last-child) {
+  &__list-items2:not(:last-child) {
     margin-right: 91px;
   }
 
