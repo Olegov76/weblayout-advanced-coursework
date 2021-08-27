@@ -4,29 +4,29 @@
   &__card {
     position: relative;
     grid-column: 3 span;
-    background-color: var(--color-grey_ligth);
     border-radius: 10px;
-    padding-left: 30px;
-    padding-top: 33px;
     padding-bottom: 30px;
+    padding-top: 33px;
+    padding-left: 30px;
+    background-color: var(--color-grey_ligth);
   }
 
   &__star {
-    background: url(../../img/star.svg) no-repeat;
+    margin-right: 7px;
     width: 16px;
     height: 15px;
-    margin-right: 7px;
+    background: url(../../img/star.svg) no-repeat;
   }
 
   &__star-text {
-    color: var(--color-secondary);
     font-size: 16px;
+    color: var(--color-secondary);
   }
 
   &__card-foto {
     position: absolute;
-    bottom: 229px;
     left: 50%;
+    bottom: 229px;
     margin-left: -45%;
   }
 
@@ -39,9 +39,9 @@
   }
 
   &__price {
-    font-size: 18px;
-    color: var(--color-secondary);
     margin-bottom: 24px;
+    font-size: 18px;
+    color: var(--color-grey_shade);
   }
 
   &__btn-big {
