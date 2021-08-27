@@ -1,0 +1,44 @@
+.feedback {
+  margin-bottom: 70px;
+
+  &__left {
+    grid-column: 6 span;
+  }
+
+  &__rigth {
+    grid-column: 6 span;
+    padding-top: 27px;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--color-grey_shade);
+  }
+
+  &__input {
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 18px;
+    width: 100%;
+    height: 54px;
+    background-color: var(--color-grey_ligth);
+  }
+
+  &__form-btn {
+    margin-bottom: 12px;
+    padding: 19px 35px;
+    font-weight: 500;
+  }
+
+  &__form-label {
+    font-size: 14px;
+  }
+}

@@ -1,4 +1,6 @@
 .reting {
+  margin-bottom: 70px;
+
   &__card {
     position: relative;
     grid-column: 3 span;
@@ -6,7 +8,7 @@
     border-radius: 10px;
     padding-left: 30px;
     padding-top: 33px;
-    height: 420px;
+    padding-bottom: 30px;
   }
 
   &__star {
@@ -26,5 +28,24 @@
     bottom: 229px;
     left: 50%;
     margin-left: -45%;
+  }
+
+  &__star-box {
+    margin-bottom: 156px;
+  }
+
+  &__card-title {
+    margin-bottom: 24px;
+  }
+
+  &__price {
+    font-size: 18px;
+    color: var(--color-secondary);
+    margin-bottom: 24px;
+  }
+
+  &__btn-big {
+    grid-column: 5/9;
+    margin: 0 55px;
   }
 }

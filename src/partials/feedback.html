@@ -1,0 +1,30 @@
+<section class="feedback container grid">
+  <div class="feedback__left">
+    <h2 class="site__title feedback__title">Мы всегда вам рады!</h2>
+    <p class="feedback__text">Безусловно, новая модель организационной деятельности в&nbsp;значительной степени
+      обусловливает важность распределения внутренних резервов и&nbsp;ресурсов.</p>
+    <form class="feedback__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <div class="feedback__input-box">
+        <input class="feedback__input" type="text" name="Имя" placeholder="Как вас зовут?" aria-label="Как вас зовут?"
+          oninput="this.value=this.value.replace(/[^A-Za-zА-Яа-яЁё]/g,'');" data-validate-field="name">
+      </div>
+      <div class="feedback__input-box">
+        <input class="feedback__input" style="position: relative;" type="tel" name="Tel" placeholder="Ваш телефон"
+          aria-label="введите email" data-validate-field="mail">
+      </div>
+      <div class="feedback__input-box">
+        <input class="feedback__input" style="position: relative;" type="email" name="Email" placeholder="Ваш e-mail"
+          aria-label="введите email" data-validate-field="mail">
+      </div>
+      <button class="btn-reset btn__purple feedback__form-btn">Отправить</button>
+      <div>
+        <input type="checkbox" id="agreement" name="agreement" checked>
+        <label class="feedback__form-label" for="agreement">Принимаю</label>
+        <a class="form__link" href="#">пользовательское соглашение</a>
+      </div>
+    </form>
+  </div>
+  <div class="feedback__rigth">
+    <img src="../img/feedback__picture.png" alt="картинка">
+  </div>
+</section>

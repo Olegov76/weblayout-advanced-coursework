@@ -1,0 +1,22 @@
+.gallery {
+  margin-bottom: 70px;
+  background: url(../../img/gallery-desk.jpg) no-repeat;
+  height: 600px;
+  width: 100%;
+  padding-top: 150px;
+
+  &__title {
+    font-family: "Play";
+    font-weight: 600;
+    font-size: 60px;
+    color: #d5b986;
+  }
+
+  &__text {
+    width: 508px;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 50px;
+  }
+}

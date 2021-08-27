@@ -5,6 +5,8 @@
   --color-secondary: #ff862f;
   --color-grey: #999;
   --color-grey_ligth: #f6f6f6;
+  --color-grey_shade: #666;
+  --color-md_grey: #eaeaea;
 }
 
 .custom-checkbox__field:checked + .custom-checkbox__content::after {
@@ -77,12 +79,13 @@ body {
   margin: 0;
   font-family: "OpenSans", sans-serif;
   font-weight: 400;
-  padding-bottom: 700px;
 }
 
 h1,
 h2,
 h3,
+h4,
+h5,
 p {
   margin: 0;
   padding: 0;
@@ -109,6 +112,50 @@ a {
   text-decoration: none;
 }
 
+.form__link {
+  font-size: 14px;
+  color: var(--color-purple);
+}
+
+::-webkit-input-placeholder {
+  color: var(--color-grey);
+}
+
+::-moz-placeholder {
+  color: var(--color-grey);
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: var(--color-grey);
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: var(--color-grey);
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+/* webkit */
+:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+/* Firefox 19+ */
+:focus:-moz-placeholder {
+  opacity: 0;
+}
+
+/* Firefox 18- */
+:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+/* IE */
+/* IE */
 .ul__reset {
   list-style: none;
   padding: 0;
@@ -141,6 +188,11 @@ a {
   border: 2px #ff4019 solid !important;
 }
 
+.logo {
+  width: 187px;
+  height: 27px;
+}
+
 .btn-reset {
   padding: 0;
   border: none;
@@ -164,5 +216,40 @@ a {
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   gap: 32px;
+}
+
+.card-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--color-black);
+  line-height: 1.3;
+}
+
+.card-btn {
+  background-color: transparent;
+  border: 2px solid var(--color-purple);
+  border-radius: 10px;
+  padding: 16px 34px;
+  color: var(--color-purple);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn__purple {
+  background-color: var(--color-purple);
+  padding: 22px 36px;
+  border-radius: 10px;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.icon-size {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-size:not(:last-child) {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=global.css.map */

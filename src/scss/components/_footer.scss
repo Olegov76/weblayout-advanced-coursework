@@ -1,0 +1,50 @@
+.footer {
+  &__bg {
+    margin-bottom: 10px;
+    padding-top: 24px;
+    background-color: var(--color-md_grey);
+  }
+
+  &__left {
+    grid-column: 4 span;
+  }
+
+  &__rigth {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 8 span;
+  }
+
+  &__logo {
+    margin-bottom: 31px;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-black);
+  }
+
+  &__list-itams {
+    margin-bottom: 7px;
+  }
+
+  &__list {
+    margin-top: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--color-grey);
+  }
+
+  &__span {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-grey);
+    letter-spacing: 0.5px;
+  }
+}

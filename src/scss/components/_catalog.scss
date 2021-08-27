@@ -1,0 +1,54 @@
+.catalog {
+  margin-bottom: 70px;
+
+  &__card {
+    position: relative;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background-color: var(--color-grey_ligth);
+  }
+
+  &__card-big {
+    grid-column: 6 span;
+  }
+
+  &__card-categories {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: var(--color-grey);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__foto-big {
+    position: absolute;
+    left: 0;
+    top: 121px;
+  }
+
+  &__card-title {
+    margin-bottom: 368px;
+  }
+
+  &__link {
+    padding-right: 28px;
+    width: 22px;
+    height: 22px;
+    font-weight: 700;
+    color: var(--color-purple);
+    background: url(../../img/catalog-arrow.svg) no-repeat center right;
+  }
+
+  &__card-small {
+    grid-column: 4 span;
+  }
+
+  &__card-title2 {
+    margin-bottom: 262px;
+  }
+}
