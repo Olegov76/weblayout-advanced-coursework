@@ -1,33 +1,74 @@
 .useful {
-  margin-bottom: 70px;
-
-  &__card {
-    position: relative;
-    grid-column: 6 span;
-    border-radius: 10px;
-    background-color: var(--color-grey_ligth);
-  }
-
-  &__foto {
-    margin-bottom: 30px;
-  }
-
-  &__card-box {
-    position: relative;
-    padding-right: 30px;
-    padding-left: 30px;
-    height: 220px;
-  }
-
-  &__text {
-    margin-bottom: 38px;
-    font-size: 24px;
-    line-height: 130%;
-  }
-
-  &__card-btn {
-    position: absolute;
-    left: 30px;
-    top: 136px;
-  }
+    margin-bottom: 68px;
+    &__card {
+        position: relative;
+        grid-column: 6 span;
+        border-radius: 10px;
+        background-color: var(--color-grey_ligth);
+    }
+    &__foto {
+        margin-bottom: 30px;
+    }
+    &__card-box {
+        position: relative;
+        padding-right: 30px;
+        padding-left: 30px;
+        height: 220px;
+    }
+    &__text {
+        margin-bottom: 38px;
+        width: 540px;
+        font-size: 24px;
+        line-height: 130%;
+    }
+    &__card-btn {
+        position: absolute;
+        left: 30px;
+        top: 136px;
+    }
+    .swiper-container3 {
+        overflow: hidden;
+    }
+    .slider-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: static;
+        transition: 0.5s;
+        width: 32px;
+        height: 32px;
+    }
+    .swiper-button-prev {
+        background: url(../../img/arrow__slider-rigth.svg);
+        margin-right: 13px;
+        transform: scaleX(-1);
+    }
+    .swiper-button-next {
+        background: url(../../img/arrow__slider-rigth.svg);
+        margin-right: 0;
+    }
+    .swiper-button-prev:hover {
+        background: url(../../img/arrow__slider-rigth-hover.svg);
+        transform: scaleX(-1);
+    }
+    .swiper-button-next:hover {
+        background: url(../../img/arrow__slider-rigth-hover.svg);
+    }
+    .swiper-button-prev:focus {
+        background: url(../../img/arrow__slider-rigth-focus.svg);
+        transform: scaleX(-1);
+    }
+    .swiper-button-next:focus {
+        background: url(../../img/arrow__slider-rigth-focus.svg);
+    }
+    .swiper-button-box {
+        display: flex;
+    }
 }

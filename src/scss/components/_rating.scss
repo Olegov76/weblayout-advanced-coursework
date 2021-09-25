@@ -1,51 +1,46 @@
 .reting {
-  margin-bottom: 70px;
-
-  &__card {
-    position: relative;
-    grid-column: 3 span;
-    border-radius: 10px;
-    padding-bottom: 30px;
-    padding-top: 33px;
-    padding-left: 30px;
-    background-color: var(--color-grey_ligth);
-  }
-
-  &__star {
-    margin-right: 7px;
-    width: 16px;
-    height: 15px;
-    background: url(../../img/star.svg) no-repeat;
-  }
-
-  &__star-text {
-    font-size: 16px;
-    color: var(--color-secondary);
-  }
-
-  &__card-foto {
-    position: absolute;
-    left: 50%;
-    bottom: 229px;
-    margin-left: -45%;
-  }
-
-  &__star-box {
-    margin-bottom: 156px;
-  }
-
-  &__card-title {
-    margin-bottom: 24px;
-  }
-
-  &__price {
-    margin-bottom: 24px;
-    font-size: 18px;
-    color: var(--color-grey_shade);
-  }
-
-  &__btn-big {
-    grid-column: 5/9;
-    margin: 0 55px;
-  }
+    margin-bottom: 70px;
+    &__card {
+        position: relative;
+        grid-column: 3 span;
+        border-radius: 10px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 30px;
+        background-color: var(--color-grey_ligth);
+    }
+    &__star {
+        margin-right: 7px;
+        width: 16px;
+        height: 15px;
+        background: url(../../img/star.svg) no-repeat;
+    }
+    &__star-text {
+        font-size: 16px;
+        color: var(--color-secondary);
+    }
+    &__card-foto {
+        position: absolute;
+        left: 50%;
+        bottom: 229px;
+        margin-left: -45%;
+    }
+    &__star-box {
+        margin-bottom: 156px;
+    }
+    &__card-title {
+        margin-bottom: 24px;
+    }
+    &__card-small-foto {
+        padding-left: 25px;
+    }
+    &__price {
+        margin-bottom: 24px;
+        font-size: 16px;
+        color: var(--color-grey_shade);
+    }
+    &__btn-big {
+        grid-column: 5/9;
+        margin: 0 55px;
+    }
 }

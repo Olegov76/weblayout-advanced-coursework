@@ -3,7 +3,7 @@
   background: url(../../img/gallery-desk.jpg) no-repeat;
   height: 600px;
   width: 100%;
-  padding-top: 150px;
+  padding-top: 157px;
 
   &__title {
     font-family: "Play";
@@ -15,8 +15,13 @@
   &__text {
     width: 508px;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--color-white);
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+    line-height: 1.25;
+  }
+
+  &__btn {
+    padding: 21px 34px;
   }
 }

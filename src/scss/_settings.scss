@@ -1,184 +1,242 @@
-html {
-  box-sizing: border-box;
-}
+            html {
+                box-sizing: border-box;
+            }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+            }
 
-body {
-  margin: 0;
-  font-family: "OpenSans", sans-serif;
-  font-weight: 400;
-}
+            body {
+                margin: 0;
+                font-family: "OpenSans", sans-serif;
+                font-weight: 400;
+            }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  margin: 0;
-  padding: 0;
-}
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            p {
+                margin: 0;
+                padding: 0;
+            }
 
-.site__title {
-  font-weight: 400;
-  font-size: 32px;
-  margin-bottom: 26px;
-  color: var(--color-black);
-}
+            .site__title {
+                font-weight: 400;
+                font-size: 32px;
+                margin-bottom: 26px;
+                color: var(--color-black);
+            }
 
-img {
-  max-width: 100%;
-}
+            img {
+                max-width: 100%;
+            }
 
-.flex {
-  display: flex;
-}
+            .flex {
+                display: flex;
+            }
 
-a {
-  text-decoration: none;
-}
+            a {
+                text-decoration: none;
+            }
 
-.form__link {
-  font-size: 14px;
-  color: var(--color-purple);
-}
+            .form__link {
+                font-size: 14px;
+                color: var(--color-purple);
+                text-decoration: underline;
+            }
 
-::-webkit-input-placeholder {
-  color: var(--color-grey);
-}
+            .form__link:focus {
+                outline: none;
+                color: red;
+            }
 
-::-moz-placeholder {
-  color: var(--color-grey);
-}
+             ::-webkit-input-placeholder {
+                color: var(--color-grey);
+            }
 
-/* Firefox 19+ */
-:-moz-placeholder {
-  color: var(--color-grey);
-}
+             ::-moz-placeholder {
+                color: var(--color-grey);
+            }
+            /* Firefox 19+ */
 
-/* Firefox 18- */
-:-ms-input-placeholder {
-  color: var(--color-grey);
-}
+             :-moz-placeholder {
+                color: var(--color-grey);
+            }
+            /* Firefox 18- */
 
+             :-ms-input-placeholder {
+                color: var(--color-grey);
+            }
 
-:focus::-webkit-input-placeholder {
-  opacity: 0;
-}
+             :focus::-webkit-input-placeholder {
+                opacity: 0;
+            }
+            /* webkit */
 
-/* webkit */
-:focus::-moz-placeholder {
-  opacity: 0;
-}
+             :focus::-moz-placeholder {
+                opacity: 0;
+            }
+            /* Firefox 19+ */
 
-/* Firefox 19+ */
-:focus:-moz-placeholder {
-  opacity: 0;
-}
+             :focus:-moz-placeholder {
+                opacity: 0;
+            }
+            /* Firefox 18- */
 
-/* Firefox 18- */
-:focus:-ms-input-placeholder {
-  opacity: 0;
-}
+             :focus:-ms-input-placeholder {
+                opacity: 0;
+            }
+            /* IE */
+            /* IE */
 
-/* IE */
+            .ul__reset {
+                list-style: none;
+                padding: 0;
+            }
 
-/* IE */
+            .is-outer {
+                position: relative !important; // stylelint-disable-line declaration-no-important
+                left: -9999px !important; // stylelint-disable-line declaration-no-important
+            }
 
-.ul__reset {
-  list-style: none;
-  padding: 0;
-}
+            .site-container {
+                overflow: hidden;
+            }
 
-.is-outer {
-  position: relative !important; // stylelint-disable-line declaration-no-important
-  left: -9999px !important; // stylelint-disable-line declaration-no-important
-}
+            .is-hidden {
+                display: none !important; // stylelint-disable-line declaration-no-important
+            }
 
-.site-container {
-  overflow: hidden;
-}
+            .for-mobile {
+                display: none;
+                @include mobile {
+                    display: block;
+                }
+            }
 
-.is-hidden {
-  display: none !important; // stylelint-disable-line declaration-no-important
-}
+            .error {
+                border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
+            }
 
-.for-mobile {
-  display: none;
+            .logo {
+                width: 187px;
+                height: 27px;
+            }
 
-  @include mobile {
-    display: block;
-  }
-}
+            .btn-reset {
+                outline: none;
+                padding: 0;
+                transition: 0.7s;
+                background: transparent;
+                cursor: pointer;
+                border: none;
+            }
 
-.error {
-  border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
-}
+            .container {
+                margin: 0 auto;
+                padding: 0 15px;
+                max-width: 1310px;
+            }
 
-.logo {
-  width: 187px;
-  height: 27px;
-}
+            .js-focus-visible :focus:not(.focus-visible) {
+                outline: none;
+            }
 
-.btn-reset {
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                gap: 32px;
+            }
 
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1310px;
-}
+            .card-title {
+                font-weight: 400;
+                font-size: 24px;
+                color: var(--color-black);
+                line-height: 1.3;
+            }
 
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
+            .card-btn {
+                background-color: transparent;
+                border: 2px solid var(--color-purple);
+                border-radius: 10px;
+                padding: 16px 34px;
+                color: var(--color-purple);
+                font-weight: 500;
+                font-size: 16px;
+            }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 32px;
-}
+            .card-btn:hover {
+                background-color: var(--color-purple);
+                color: #fff;
+            }
 
-.card-title {
-  font-weight: 400;
-  font-size: 24px;
-  color: var(--color-black);
-  line-height: 1.3;
-}
+            .card-btn:focus {
+                background-color: var(--color-purple-hover);
+                border: solid 2px var(--color-purple);
+                color: #fff;
+            }
 
-.card-btn {
-  background-color: transparent;
-  border: 2px solid var(--color-purple);
-  border-radius: 10px;
-  padding: 16px 34px;
-  color: var(--color-purple);
-  font-weight: 500;
-  font-size: 16px;
-}
+            .card-btn:active {
+                background-color: var(--color-primary_shade);
+            }
 
-.btn__purple {
-  background-color: var(--color-purple);
-  padding: 22px 36px;
-  border-radius: 10px;
-  color: var(--color-white);
-  font-weight: 700;
-  font-size: 16px;
-}
+            .btn__purple {
+                background-color: var(--color-purple);
+                padding: 18px 32px;
+                border: solid 2px var(--color-purple);
+                border-radius: 10px;
+                color: var(--color-white);
+                font-weight: 700;
+                font-size: 16px;
+            }
 
-.icon-size {
-  width: 30px;
-  height: 30px;
+            .btn__purple:hover {
+                background-color: var(--color-purple-hover);
+            }
 
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
-}
+            .btn__purple:focus {
+                background-color: var(--color-purple-hover);
+                border: solid 2px var(--color-primary_shade);
+            }
+
+            .btn__purple:active {
+                background-color: var(--color-primary_shade);
+            }
+
+            .fb,
+            .vk,
+            .instagram {
+                width: 30px;
+                height: 30px;
+                fill: var(--color-grey);
+                transition: 0.7s;
+            }
+
+            .fb:hover,
+            .vk:hover,
+            .instagram:hover {
+                fill: var(--color-purple);
+            }
+
+            .icon-size {
+                padding: 4px;
+            }
+
+            .icon-size:focus {
+                outline: none;
+                .fb,
+                .vk,
+                .instagram {
+                    background-color: var(--color-purple-hover);
+                }
+            }
+
+            .icon-size {
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
+            }

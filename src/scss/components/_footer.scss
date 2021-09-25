@@ -1,50 +1,63 @@
 .footer {
-  &__bg {
-    margin-bottom: 10px;
-    padding-top: 24px;
-    background-color: var(--color-md_grey);
-  }
-
-  &__left {
-    grid-column: 4 span;
-  }
-
-  &__rigth {
-    display: flex;
-    justify-content: space-between;
-    grid-column: 8 span;
-  }
-
-  &__logo {
-    margin-bottom: 31px;
-  }
-
-  &__title {
-    margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--color-black);
-  }
-
-  &__list-itams {
-    margin-bottom: 7px;
-  }
-
-  &__list {
-    margin-top: 0;
-  }
-
-  &__link {
-    display: inline-block;
-    font-size: 14px;
-    color: var(--color-grey);
-  }
-
-  &__span {
-    margin-bottom: 10px;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: var(--color-grey);
-  }
+    &__bg {
+        margin-bottom: 10px;
+        padding-top: 24px;
+        background-color: var(--color-md_grey);
+    }
+    &__left {
+        grid-column: 4 span;
+    }
+    &__rigth {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 8 span;
+        padding-top: 4px;
+    }
+    &__logo {
+        display: inline-block;
+        margin-bottom: 27px;
+        outline: none;
+    }
+    &__soc-box {
+        margin-left: -4px;
+    }
+    &__title {
+        margin-bottom: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--color-black);
+    }
+    &__list-itams {
+        margin-bottom: 7px;
+    }
+    &__list {
+        margin-top: 0;
+    }
+    &__link {
+        display: inline-block;
+        font-size: 14px;
+        color: var(--color-grey);
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: -5px;
+        transition: 0.5s;
+    }
+    &__link:hover {
+        color: var(--color-purple);
+    }
+    &__link:focus {
+        outline: none;
+        color: var(--color-primary_shade);
+        background-color: var(--color-pink_violet);
+    }
+    &__link:active {
+        color: var(--color-primary_shade);
+    }
+    &__span {
+        margin-bottom: 10px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: var(--color-grey);
+    }
 }

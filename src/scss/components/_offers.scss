@@ -1,85 +1,126 @@
 .offers {
-  margin-bottom: 70px;
-
-  &__title {
-    font-size: 32px;
-  }
-
-  &__card-small {
-    grid-column: 3 span;
-    background-color: var(--color-grey_ligth);
-    border-radius: 10px;
-    position: relative;
-    padding-left: 30px;
-    padding-top: 300px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-  }
-
-  &__card-big {
-    position: relative;
-    grid-column: 6 span;
-    background-color: var(--color-grey_ligth);
-    border-radius: 10px;
-    padding-left: 30px;
-    padding-top: 300px;
-    padding-right: 51px;
-  }
-
-  &__arrow {
-    position: absolute;
-    left: 0;
-    top: 30px;
-    background: url(../../img/offers__arrow.svg) no-repeat;
-    width: 92px;
-    height: 34px;
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--color-white);
-    padding-top: 9px;
-    padding-left: 19px;
-  }
-
-  &__img1 {
-    position: absolute;
-    left: 50%;
-    margin-left: -25%;
-    bottom: 229px;
-  }
-
-  &__img-big {
-    position: absolute;
-    bottom: 229px;
-    left: 50%;
-    margin-left: -35%;
-  }
-
-  &__card-title {
-    margin-bottom: 23px;
-  }
-
-  &__price-box {
-    align-items: center;
-    margin-bottom: 23px;
-  }
-
-  &__price {
-    color: var(--color-secondary);
-    font-size: 18px;
-    margin-right: 30px;
-  }
-
-  &__price-none {
-    font-size: 16px;
-    color: var(--color-grey);
-  }
-
-  &__card-scheme {
-    background: url(../../img/offers__foto2-svg.svg)no-repeat;
-    width: 230px;
-    height: 107px;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-  }
+    margin-bottom: 70px;
+    &__title {
+        font-size: 32px;
+    }
+    &__card-small {
+        grid-column: 3 span;
+        background-color: var(--color-grey_ligth);
+        border-radius: 10px;
+        position: relative;
+        padding-left: 30px;
+        padding-top: 295px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+    &__card-big {
+        position: relative;
+        grid-column: 6 span;
+        background-color: var(--color-grey_ligth);
+        border-radius: 10px;
+        padding-left: 30px;
+        padding-top: 295px;
+        padding-right: 51px;
+    }
+    &__arrow {
+        position: absolute;
+        left: 0;
+        top: 27px;
+        background: url(../../img/offers__arrow.svg) no-repeat;
+        width: 92px;
+        height: 34px;
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--color-white);
+        padding-top: 9px;
+        padding-left: 19px;
+    }
+    &__img1 {
+        position: absolute;
+        left: 50%;
+        margin-left: -25%;
+        bottom: 229px;
+    }
+    &__img1-slide2 {
+        padding-left: 20px;
+    }
+    &__img1-slide2 {
+        padding-right: 10px;
+    }
+    &__img-big {
+        position: absolute;
+        bottom: 229px;
+        left: 50%;
+        margin-left: -35%;
+    }
+    &__card-title {
+        margin-bottom: 23px;
+    }
+    &__price-box {
+        align-items: center;
+        margin-bottom: 23px;
+    }
+    &__price {
+        color: var(--color-secondary);
+        font-size: 18px;
+        margin-right: 30px;
+    }
+    &__price-none {
+        font-size: 16px;
+        color: var(--color-grey);
+    }
+    &__card-scheme {
+        background: url(../../img/offers__foto2-svg.svg)no-repeat;
+        width: 230px;
+        height: 107px;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+    &__img3-slide2 {
+        margin-left: -30%;
+    }
+    .swiper-container2 {
+        overflow: hidden;
+    }
+    .slider-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: static;
+        width: 32px;
+        height: 32px;
+    }
+    .swiper-button-prev {
+        background: url(../../img/arrow__slider-rigth.svg) no-repeat;
+        transform: scaleX(-1);
+        margin-right: 13px;
+    }
+    .swiper-button-next {
+        background: url(../../img/arrow__slider-rigth.svg) no-repeat;
+    }
+    .swiper-button-prev:hover {
+        background: url(../../img/arrow__slider-rigth-hover.svg);
+        transform: scaleX(-1);
+    }
+    .swiper-button-next:hover {
+        background: url(../../img/arrow__slider-rigth-hover.svg);
+    }
+    .swiper-button-prev:focus {
+        background: url(../../img/arrow__slider-rigth-focus.svg);
+        transform: scaleX(-1);
+    }
+    .swiper-button-next:focus {
+        background: url(../../img/arrow__slider-rigth-focus.svg);
+    }
+    .swiper-button-box {
+        display: flex;
+    }
 }
