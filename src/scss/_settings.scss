@@ -218,10 +218,12 @@
                 fill: var(--color-purple);
             }
 
-            .fb:hover,
-            .vk:hover,
-            .instagram:active {
-                fill: var(--color-primary_shade);
+            .icon-size:active {
+                .fb,
+                .vk,
+                .instagram {
+                    fill: var(--color-primary_shade);
+                }
             }
 
             .icon-size:focus {
