@@ -1,12 +1,17 @@
 :root {
   --color-black: #333;
   --color-purple: #a65cf0;
+  --color-purple-hover: #c998fb;
   --color-white: #fff;
   --color-secondary: #ff862f;
+  --color-secondary_light: #ffbd59;
   --color-grey: #999;
   --color-grey_ligth: #f6f6f6;
   --color-grey_shade: #666;
   --color-md_grey: #eaeaea;
+  --color-primary_shade: #7033ac;
+  --color-pink_violet: #ebd1ff;
+  --color-pink_light: #f8efff;
 }
 
 .custom-checkbox__field:checked + .custom-checkbox__content::after {
@@ -52,7 +57,7 @@
   src: url("../fonts/../fonts/playfair_display_black.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
-  font-style: bold;
+  font-style: normal;
 }
 
 @font-face {
@@ -81,12 +86,7 @@ body {
   font-weight: 400;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
+.reset {
   margin: 0;
   padding: 0;
 }
@@ -115,6 +115,12 @@ a {
 .form__link {
   font-size: 14px;
   color: var(--color-purple);
+  text-decoration: underline;
+}
+
+.form__link:focus {
+  outline: none;
+  color: red;
 }
 
 ::-webkit-input-placeholder {
@@ -194,10 +200,13 @@ a {
 }
 
 .btn-reset {
+  outline: none;
   padding: 0;
-  border: none;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   background: transparent;
   cursor: pointer;
+  border: none;
 }
 
 .container {
@@ -235,21 +244,75 @@ a {
   font-size: 16px;
 }
 
+.card-btn:hover {
+  background-color: var(--color-purple);
+  color: #fff;
+}
+
+.card-btn:focus {
+  background-color: var(--color-purple-hover);
+  border: solid 2px var(--color-purple);
+  color: #fff;
+}
+
+.card-btn:active {
+  background-color: var(--color-primary_shade);
+}
+
 .btn__purple {
   background-color: var(--color-purple);
-  padding: 22px 36px;
+  padding: 18px 32px;
+  border: solid 2px var(--color-purple);
   border-radius: 10px;
   color: var(--color-white);
   font-weight: 700;
   font-size: 16px;
 }
 
-.icon-size {
+.btn__purple:hover {
+  background-color: var(--color-purple-hover);
+}
+
+.btn__purple:focus {
+  background-color: var(--color-purple-hover);
+  border: solid 2px var(--color-primary_shade);
+}
+
+.btn__purple:active {
+  background-color: var(--color-primary_shade);
+}
+
+.fb,
+.vk,
+.instagram {
   width: 30px;
   height: 30px;
+  fill: var(--color-grey);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.fb:hover,
+.vk:hover,
+.instagram:hover {
+  fill: var(--color-purple);
+}
+
+.icon-size {
+  padding: 4px;
+}
+
+.icon-size:focus {
+  outline: none;
+}
+
+.icon-size:focus .fb,
+.icon-size:focus .vk,
+.icon-size:focus .instagram {
+  background-color: var(--color-purple-hover);
 }
 
 .icon-size:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 8px;
 }
 /*# sourceMappingURL=global.css.map */

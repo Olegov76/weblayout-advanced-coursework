@@ -205,10 +205,11 @@
             .fb,
             .vk,
             .instagram {
-                width: 30px;
-                height: 30px;
+                width: 34px;
+                height: 34px;
                 fill: var(--color-grey);
-                transition: 0.7s;
+                transition: 0.5s;
+                padding: 2px;
             }
 
             .fb:hover,
@@ -217,8 +218,10 @@
                 fill: var(--color-purple);
             }
 
-            .icon-size {
-                padding: 4px;
+            .fb:hover,
+            .vk:hover,
+            .instagram:active {
+                fill: var(--color-primary_shade);
             }
 
             .icon-size:focus {
@@ -227,11 +230,12 @@
                 .vk,
                 .instagram {
                     background-color: var(--color-purple-hover);
+                    fill: var(--color-white);
                 }
             }
 
             .icon-size {
                 &:not(:last-child) {
-                    margin-right: 8px;
+                    margin-right: 11px;
                 }
             }

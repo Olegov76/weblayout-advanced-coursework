@@ -1,8 +1,10 @@
 .reting {
     margin-bottom: 70px;
+    &__list {
+        grid-column: 3 span;
+    }
     &__card {
         position: relative;
-        grid-column: 3 span;
         border-radius: 10px;
         padding-bottom: 30px;
         padding-top: 30px;

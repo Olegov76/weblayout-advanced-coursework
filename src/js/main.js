@@ -5,10 +5,10 @@ const slider3 = document.querySelector('.swiper-container3');
 let mySwiper = new Swiper(slider, {
     effect: 'fade',
     loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
 
     loop: true,
     pagination: {
@@ -37,23 +37,34 @@ let mySwiper2 = new Swiper(slider2, {
 })
 
 let mySwiper3 = new Swiper(slider3, {
-        slidesPerView: 2,
-        spaceBetween: 32,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    })
-    // кастомный селект
-const defaultSelect = () => {
-    const element = document.querySelector('.header__select');
-    const choices = new Choices(element, {
-        searchEnabled: false,
-    });
-};
+    slidesPerView: 2,
+    spaceBetween: 32,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+})
 
-defaultSelect();
-// маска для телефона
+document.addEventListener("DOMContentLoaded", function() {
+        const selector = document.querySelector(".choices")
+
+        const choices = new Choices(selector, {
+            searchEnabled: false,
+            shouldSort: false,
+            classNames: {
+                containerOuter: 'choices choices1',
+            },
+        });
+
+        const choices2 = new Choices(document.querySelector(".choices2"), {
+            searchEnabled: false,
+            shouldSort: false,
+            classNames: {
+                containerOuter: 'choices choices2',
+            },
+        });
+    })
+    // маска для телефона
 
 var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7(999)999 99 99");
