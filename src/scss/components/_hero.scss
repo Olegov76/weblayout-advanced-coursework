@@ -23,6 +23,9 @@
         line-height: 1.37;
         color: var(--color-grey);
         margin-bottom: 49px;
+        &-size {
+            width: 580px;
+        }
     }
     &__title-white {
         color: var(--color-white);
