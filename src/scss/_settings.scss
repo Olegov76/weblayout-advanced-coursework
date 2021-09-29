@@ -34,17 +34,28 @@
                 display: flex;
             }
 
+            .visually-hidden {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                padding: 0;
+                overflow: hidden;
+                border: 0;
+                clip: rect(0 0 0 0)
+            }
+
             a {
                 text-decoration: none;
             }
 
-            .form__link {
+            .form-link {
                 font-size: 14px;
                 color: var(--color-purple);
                 text-decoration: underline;
             }
 
-            .form__link:focus {
+            .form-link:focus {
                 outline: none;
                 color: red;
             }
@@ -88,7 +99,7 @@
             /* IE */
             /* IE */
 
-            .ul__reset {
+            .ul-reset {
                 list-style: none;
                 padding: 0;
             }
@@ -179,7 +190,7 @@
                 background-color: var(--color-primary_shade);
             }
 
-            .btn__purple {
+            .btn-purple {
                 background-color: var(--color-purple);
                 padding: 18px 32px;
                 border: solid 2px var(--color-purple);
@@ -189,16 +200,16 @@
                 font-size: 16px;
             }
 
-            .btn__purple:hover {
+            .btn-purple:hover {
                 background-color: var(--color-purple-hover);
             }
 
-            .btn__purple:focus {
+            .btn-purple:focus {
                 background-color: var(--color-purple-hover);
                 border: solid 2px var(--color-primary_shade);
             }
 
-            .btn__purple:active {
+            .btn-purple:active {
                 background-color: var(--color-primary_shade);
             }
 
