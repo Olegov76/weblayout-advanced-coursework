@@ -5,10 +5,10 @@ const slider3 = document.querySelector('.swiper-container3');
 let mySwiper = new Swiper(slider, {
     effect: 'fade',
     loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
 
     loop: true,
     pagination: {
@@ -51,17 +51,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const choices = new Choices(selector, {
             searchEnabled: false,
             shouldSort: false,
-            classNames: {
-                containerOuter: 'choices choices1',
-            },
         });
 
         const choices2 = new Choices(document.querySelector(".choices2"), {
             searchEnabled: false,
             shouldSort: false,
-            classNames: {
-                containerOuter: 'choices choices2',
-            },
         });
     })
     // маска для телефона

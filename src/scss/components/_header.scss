@@ -10,8 +10,8 @@
         .choices {
             transition: 0.5s;
         }
-        .choices:hover {
-            opacity: 0.75;
+        .choices__inner:hover {
+            color: var(--color-purple-hover);
         }
         .choices__inner:active {
             color: var(--color-primary_shade);
