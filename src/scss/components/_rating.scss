@@ -1,5 +1,8 @@
 .reting {
     margin-bottom: 70px;
+    &__indent {
+        margin-bottom: 38px;
+    }
     &__list {
         grid-column: 3 span;
     }
@@ -42,7 +45,8 @@
         color: var(--color-grey_shade);
     }
     &__btn-big {
-        grid-column: 5/9;
-        margin: 0 55px;
+        display: block;
+        padding: 20px 35px;
+        margin: 0 auto;
     }
 }

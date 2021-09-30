@@ -91,7 +91,7 @@ body {
   padding: 0;
 }
 
-.site__title {
+.site-title {
   font-weight: 400;
   font-size: 32px;
   margin-bottom: 26px;
@@ -108,17 +108,28 @@ img {
   display: flex;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 a {
   text-decoration: none;
 }
 
-.form__link {
+.form-link {
   font-size: 14px;
   color: var(--color-purple);
   text-decoration: underline;
 }
 
-.form__link:focus {
+.form-link:focus {
   outline: none;
   color: red;
 }
@@ -162,7 +173,7 @@ a {
 
 /* IE */
 /* IE */
-.ul__reset {
+.ul-reset {
   list-style: none;
   padding: 0;
 }
@@ -259,7 +270,7 @@ a {
   background-color: var(--color-primary_shade);
 }
 
-.btn__purple {
+.btn-purple {
   background-color: var(--color-purple);
   padding: 18px 32px;
   border: solid 2px var(--color-purple);
@@ -269,27 +280,28 @@ a {
   font-size: 16px;
 }
 
-.btn__purple:hover {
+.btn-purple:hover {
   background-color: var(--color-purple-hover);
 }
 
-.btn__purple:focus {
+.btn-purple:focus {
   background-color: var(--color-purple-hover);
   border: solid 2px var(--color-primary_shade);
 }
 
-.btn__purple:active {
+.btn-purple:active {
   background-color: var(--color-primary_shade);
 }
 
 .fb,
 .vk,
 .instagram {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   fill: var(--color-grey);
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 2px;
 }
 
 .fb:hover,
@@ -298,8 +310,10 @@ a {
   fill: var(--color-purple);
 }
 
-.icon-size {
-  padding: 4px;
+.icon-size:active .fb,
+.icon-size:active .vk,
+.icon-size:active .instagram {
+  fill: var(--color-primary_shade);
 }
 
 .icon-size:focus {
@@ -310,14 +324,15 @@ a {
 .icon-size:focus .vk,
 .icon-size:focus .instagram {
   background-color: var(--color-purple-hover);
+  fill: var(--color-white);
 }
 
 .icon-size:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 11px;
 }
 
 .header {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .header .choices__inner {
@@ -375,6 +390,7 @@ a {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
+  color: var(--color-black);
 }
 
 .header .choices__item {
@@ -583,9 +599,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 13px 32px;
+  padding: 10px 32px;
   padding-right: 27px;
   width: 761px;
+  border: solid 2px transparent;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   background-color: var(--color-grey_ligth);
@@ -632,40 +649,92 @@ a {
   background: url(../../img/arrow__slider-rigth-activ.svg) no-repeat;
 }
 
-.header__select-too-box {
+.header__select-too-box .choices {
+  width: 300px;
   border: 2px solid var(--color-grey_ligth);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 17px 32px;
-  width: 300px;
+  color: var(--color-purple);
 }
 
-.header .choices .choices2 {
+.header__select-too-box .choices__placeholder {
+  opacity: 1;
+}
+
+.header__select-too-box .choices[data-type*=select-one] .choices__inner {
+  padding: 0;
+}
+
+.header__select-too-box .choices__inner {
+  padding: 0;
+  padding-right: 10px;
   cursor: pointer;
-  width: 100%;
   border: none;
   outline: none;
   color: var(--color-purple);
   font-size: 16px;
+  z-index: 99999;
 }
 
-.header .choices2.choices.choices__list--dropdown {
-  border: none;
-  border-radius: 0;
-  margin-top: 30px;
+.header__select-too-box .choices__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 15px;
+  width: 300px;
+  padding: 17px 32px;
 }
 
-.header__select-too-box:hover {
+.header__select-too-box .choices__list--dropdown {
+  border: 2px solid var(--color-grey_ligth);
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 999;
+  min-height: 100%;
+  width: 300px;
+  padding: 0;
+}
+
+.header__select-too-box .choices__list--dropdown.is-active {
+  padding: 0;
+  padding-right: 30px;
+}
+
+.header__select-too-box .choices.is-focused.is-open {
+  border: 2px solid var(--color-grey_ligth);
+}
+
+.header__select-too-box .choices__list--dropdown .choices__item--selectable {
+  padding: 0;
+}
+
+.header__select-too-box .choices__item {
+  margin: 0;
+}
+
+.header__select-too-box .choices:hover {
   border: 2px solid var(--color-purple);
 }
 
-.header__select-too-box:focus-within {
-  border: 2px solid var(--color-purple);
+.header__select-too-box .choices:focus {
   background-color: var(--color-pink_light);
+  border: 2px solid var(--color-purple);
 }
 
-.header__select-too-box:focus-within .header__select-too {
-  background-color: var(--color-pink_light);
+.header__select-too-box .choices[data-type*=select-one]:after {
+  padding-right: 25px;
+}
+
+.header__select-too-box .choices[data-type*=select-one].is-open:after {
+  margin-right: 13px;
+}
+
+.header__select-too-box #choices--choices2-item-choice-1 {
+  display: none;
 }
 
 .header__three-left {
@@ -763,7 +832,7 @@ a {
 }
 
 .hero__slide-size {
-  padding-top: 80px;
+  padding-top: 85px;
 }
 
 .hero__slide-foto1 {
@@ -787,12 +856,16 @@ a {
   margin-bottom: 49px;
 }
 
+.hero__title-size {
+  width: 580px;
+}
+
 .hero__title-white {
   color: var(--color-white);
 }
 
 .hero__btn {
-  padding: 18px 46px;
+  padding: 18px 48px;
 }
 
 .offers {
@@ -968,9 +1041,16 @@ a {
   margin-bottom: 70px;
 }
 
+.reting__indent {
+  margin-bottom: 38px;
+}
+
+.reting__list {
+  grid-column: 3 span;
+}
+
 .reting__card {
   position: relative;
-  grid-column: 3 span;
   border-radius: 10px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -1016,14 +1096,13 @@ a {
 }
 
 .reting__btn-big {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 4;
-  grid-column: 5/9;
-  margin: 0 55px;
+  display: block;
+  padding: 20px 35px;
+  margin: 0 auto;
 }
 
 .gallery {
-  margin-bottom: 70px;
+  margin-bottom: 67px;
   background: url(../../img/gallery-desk.jpg) no-repeat;
   height: 600px;
   width: 100%;
@@ -1042,12 +1121,12 @@ a {
   font-size: 48px;
   font-weight: 400;
   color: var(--color-white);
-  margin-bottom: 48px;
+  margin-bottom: 44px;
   line-height: 1.25;
 }
 
 .gallery__btn {
-  padding: 21px 34px;
+  padding: 19px 32px;
 }
 
 .catalog {
@@ -1413,8 +1492,8 @@ a {
 .feedback .custom-checkbox + label::before {
   content: '';
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   border: 1px solid var(--color-grey);
   border-radius: 2px;
   background-repeat: no-repeat;
@@ -1458,10 +1537,6 @@ a {
   display: inline-block;
   margin-bottom: 27px;
   outline: none;
-}
-
-.footer__soc-box {
-  margin-left: -4px;
 }
 
 .footer__title {

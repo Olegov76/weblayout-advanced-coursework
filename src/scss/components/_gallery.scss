@@ -1,27 +1,24 @@
 .gallery {
-  margin-bottom: 70px;
-  background: url(../../img/gallery-desk.jpg) no-repeat;
-  height: 600px;
-  width: 100%;
-  padding-top: 157px;
-
-  &__title {
-    font-family: "Play";
-    font-weight: 600;
-    font-size: 60px;
-    color: #d5b986;
-  }
-
-  &__text {
-    width: 508px;
-    font-size: 48px;
-    font-weight: 400;
-    color: var(--color-white);
-    margin-bottom: 48px;
-    line-height: 1.25;
-  }
-
-  &__btn {
-    padding: 21px 34px;
-  }
+    margin-bottom: 67px;
+    background: url(../../img/gallery-desk.jpg) no-repeat;
+    height: 600px;
+    width: 100%;
+    padding-top: 157px;
+    &__title {
+        font-family: "Play";
+        font-weight: 600;
+        font-size: 60px;
+        color: #d5b986;
+    }
+    &__text {
+        width: 508px;
+        font-size: 48px;
+        font-weight: 400;
+        color: var(--color-white);
+        margin-bottom: 44px;
+        line-height: 1.25;
+    }
+    &__btn {
+        padding: 19px 32px;
+    }
 }
