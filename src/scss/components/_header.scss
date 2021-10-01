@@ -13,6 +13,9 @@
         .choices__inner:hover {
             color: var(--color-purple-hover);
         }
+        .choices:focus {
+            background: var(--color-pink_violet);
+        }
         .choices__inner:active {
             color: var(--color-primary_shade);
         }

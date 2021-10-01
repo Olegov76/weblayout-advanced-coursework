@@ -348,8 +348,12 @@ a {
   transition: 0.5s;
 }
 
-.header .choices:hover {
-  opacity: 0.75;
+.header .choices__inner:hover {
+  color: var(--color-purple-hover);
+}
+
+.header .choices:focus {
+  background: var(--color-pink_violet);
 }
 
 .header .choices__inner:active {
@@ -1180,18 +1184,18 @@ a {
 .catalog__link {
   font-weight: 700;
   color: var(--color-purple);
-  line-height: 100%;
 }
 
 .catalog__link-link:focus {
   outline: none;
 }
 
+.catalog__link-link:focus .catalog__link {
+  color: transparent;
+}
+
 .catalog__link-link:focus .catalog__link-box {
   background: url(../../img/catalog-arrow-focus.svg) no-repeat center right;
-  padding-left: 2px;
-  padding-bottom: 0;
-  color: transparent;
 }
 
 .catalog__link-link:hover .catalog__link-box {
@@ -1200,6 +1204,7 @@ a {
 
 .catalog__link-link:hover .catalog__link-box .catalog__link {
   border-bottom: 2px solid var(--color-purple);
+  color: var(--color-purple);
 }
 
 .catalog__link-link:active .catalog__link-box {
