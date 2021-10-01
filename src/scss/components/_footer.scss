@@ -9,7 +9,6 @@
     }
     &__rigth {
         display: flex;
-        justify-content: space-between;
         grid-column: 8 span;
         padding-top: 4px;
     }
@@ -26,6 +25,18 @@
     }
     &__list-itams {
         margin-bottom: 7px;
+    }
+    &__abaut-size1 {
+        width: 84px;
+    }
+    &__abaut-size2 {
+        width: 154px;
+    }
+    &__abaut-size3 {
+        width: 141px;
+    }
+    &__abaut:not(:last-child) {
+        margin-right: 112px;
     }
     &__list {
         margin-top: 0;

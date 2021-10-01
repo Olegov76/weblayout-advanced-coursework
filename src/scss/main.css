@@ -1531,9 +1531,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   grid-column: 8 span;
   padding-top: 4px;
 }
@@ -1553,6 +1550,22 @@ a {
 
 .footer__list-itams {
   margin-bottom: 7px;
+}
+
+.footer__abaut-size1 {
+  width: 84px;
+}
+
+.footer__abaut-size2 {
+  width: 154px;
+}
+
+.footer__abaut-size3 {
+  width: 141px;
+}
+
+.footer__abaut:not(:last-child) {
+  margin-right: 112px;
 }
 
 .footer__list {
