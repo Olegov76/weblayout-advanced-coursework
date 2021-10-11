@@ -29,6 +29,8 @@ let mySwiper = new Swiper(slider, {
 })
 
 let mySwiper2 = new Swiper(slider2, {
+    slidesPerView: 3,
+    spaceBetween: 32,
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -91,11 +93,3 @@ new JustValidate('.feedback__form', {
         mail: 'Недопустимый формат'
     },
 });
-
-
-// const defaultSelect = () => {
-//     const element = document.querySelector('#selectCustom');
-//     const choices = new Choices(element, {
-//         searchEnabled: false,
-//     });
-// };

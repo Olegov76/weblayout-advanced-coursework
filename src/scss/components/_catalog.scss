@@ -28,39 +28,61 @@
     &__card-title {
         margin-bottom: 368px;
     }
-    &__link-box {
-        width: 110px;
-        line-height: 22px;
-        background: url(../../img/catalog-arrow.svg) no-repeat center right;
-    }
     &__link-link {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
     }
-    &__link {
+    &__link-box {
+        text-align: center;
+        width: 110px;
+    }
+    &__link-icon {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        stroke-width: 2px;
+        stroke: var(--color-purple);
+        transition: .3s ease-in-out;
+    }
+    &__link-content {
+        margin-right: 5px;
+        line-height: 22px;
         font-weight: 700;
         color: var(--color-purple);
+        line-height: 1.1;
+    }
+    &__link-link .catalog__link-content:after {
+        background-color: var(--color-purple);
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0%;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out;
+    }
+    &__link-link:hover .catalog__link-icon {
+        fill: var(--color-purple);
+        stroke: var(--color-white);
+    }
+    &__link-link:hover .catalog__link-content:after,
+    &__link-link:focus .catalog__link-content:after {
+        width: 100%;
+    }
+    &__link-link:active .catalog__link-content:after {
+        width: 100%;
+        background-color: var(--color-primary_shade);
     }
     &__link-link:focus {
-        .catalog__link {
-            color: transparent;
-        }
-        .catalog__link-box {
-            background: url(../../img/catalog-arrow-focus.svg) no-repeat center right;
-        }
         outline: none;
-    }
-    &__link-link:hover .catalog__link-box {
-        background: url(../../img/catalog-arrow-hover.svg) no-repeat center right;
-        .catalog__link {
-            border-bottom: 2px solid var(--color-purple);
-            color: var(--color-purple);
+        .catalog__link-icon {
+            stroke: var(--color-white);
+            fill: var(--color-purple-hover);
         }
     }
-    &__link-link:active .catalog__link-box {
-        background: url(../../img/catalog-arrow-activ.svg) no-repeat center right;
-        .catalog__link {
-            border-bottom: 2px solid var(--color-primary_shade);
-        }
+    &__link-link:active .catalog__link-icon {
+        stroke: var(--color-white);
+        fill: var(--color-primary_shade);
     }
     &__card-small {
         grid-column: 4 span;

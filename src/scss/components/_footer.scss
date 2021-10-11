@@ -48,7 +48,7 @@
         padding-left: 5px;
         padding-right: 5px;
         margin-left: -5px;
-        transition: 0.5s;
+        transition: .3s ease-in-out;
     }
     &__link:hover {
         color: var(--color-purple);

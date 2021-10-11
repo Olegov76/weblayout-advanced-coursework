@@ -4,7 +4,7 @@
         font-size: 32px;
     }
     &__card-small {
-        grid-column: 3 span;
+        width: 296px;
         background-color: var(--color-grey_ligth);
         border-radius: 10px;
         position: relative;
@@ -15,12 +15,12 @@
     }
     &__card-big {
         position: relative;
-        grid-column: 6 span;
+        width: 624px;
         background-color: var(--color-grey_ligth);
         border-radius: 10px;
         padding-left: 30px;
         padding-top: 295px;
-        padding-right: 51px;
+        padding-right: 151px;
     }
     &__arrow {
         position: absolute;
@@ -86,10 +86,8 @@
     .swiper-container2 {
         overflow: hidden;
     }
-    .slider-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .swiper-slider {
+        width: auto;
     }
     .swiper-button-prev::after,
     .swiper-button-next::after {
@@ -98,30 +96,56 @@
     .swiper-button-prev,
     .swiper-button-next {
         position: static;
+        transition: .3s ease-in-out;
         width: 32px;
         height: 32px;
     }
     .swiper-button-prev {
-        background: url(../../img/arrow__slider-rigth.svg) no-repeat;
-        transform: scaleX(-1);
         margin-right: 13px;
+        transform: scaleX(-1);
     }
     .swiper-button-next {
-        background: url(../../img/arrow__slider-rigth.svg) no-repeat;
+        margin-right: 0;
     }
-    .swiper-button-prev:hover {
-        background: url(../../img/arrow__slider-rigth-hover.svg);
-        transform: scaleX(-1);
+    .swiper-btn-icon {
+        fill: var(--color-white);
+        stroke: var(--color-purple);
+        stroke-width: 2px;
     }
-    .swiper-button-next:hover {
-        background: url(../../img/arrow__slider-rigth-hover.svg);
+    .swiper-button-prev:hover .swiper-btn-icon {
+        stroke: var(--color-white);
+        fill: var(--color-purple);
+        stroke-width: 2px;
     }
-    .swiper-button-prev:focus {
-        background: url(../../img/arrow__slider-rigth-focus.svg);
-        transform: scaleX(-1);
+    .swiper-button-next:hover .swiper-btn-icon {
+        stroke: var(--color-white);
+        fill: var(--color-purple);
+        stroke-width: 2px;
     }
-    .swiper-button-next:focus {
-        background: url(../../img/arrow__slider-rigth-focus.svg);
+    .swiper-button-prev:focus .swiper-btn-icon {
+        stroke: var(--color-white);
+        fill: var(--color-purple-hover);
+        stroke-width: 2px;
+    }
+    .swiper-button-next:focus .swiper-btn-icon {
+        stroke: var(--color-white);
+        fill: var(--color-purple-hover);
+        stroke-width: 2px;
+    }
+    .swiper-button-prev:active .swiper-btn-icon {
+        stroke: var(--color-white);
+        fill: var(--color-primary_shade);
+        stroke-width: 2px;
+    }
+    .swiper-button-next:active .swiper-btn-icon {
+        stroke: var(--color-white);
+        fill: var(--color-primary_shade);
+        stroke-width: 2px;
+    }
+    .slider-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .swiper-button-box {
         display: flex;
