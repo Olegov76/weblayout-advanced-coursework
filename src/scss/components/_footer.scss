@@ -1,7 +1,8 @@
 .footer {
     &__bg {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         padding-top: 24px;
+        padding-bottom: 20px;
         background-color: var(--color-md_grey);
     }
     &__left {
@@ -24,7 +25,7 @@
         color: var(--color-black);
     }
     &__list-itams {
-        margin-bottom: 7px;
+        margin-bottom: 5px;
     }
     &__abaut-size1 {
         width: 90px;
@@ -37,9 +38,6 @@
     }
     &__abaut:not(:last-child) {
         margin-right: 112px;
-    }
-    &__list {
-        margin-top: 0;
     }
     &__link {
         display: inline-block;

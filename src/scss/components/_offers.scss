@@ -4,7 +4,7 @@
         font-size: 32px;
     }
     &__card-small {
-        width: 296px;
+        max-width: 236px;
         background-color: var(--color-grey_ligth);
         border-radius: 10px;
         position: relative;
@@ -15,12 +15,13 @@
     }
     &__card-big {
         position: relative;
-        width: 624px;
+        max-width: 443px;
         background-color: var(--color-grey_ligth);
         border-radius: 10px;
         padding-left: 30px;
         padding-top: 295px;
         padding-right: 151px;
+        padding-bottom: 30px;
     }
     &__arrow {
         position: absolute;
@@ -85,9 +86,6 @@
     }
     .swiper-container2 {
         overflow: hidden;
-    }
-    .swiper-slider {
-        width: auto;
     }
     .swiper-button-prev::after,
     .swiper-button-next::after {

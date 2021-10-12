@@ -1,5 +1,5 @@
 .useful {
-    margin-bottom: 68px;
+    margin-bottom: 63px;
     &__card {
         position: relative;
         grid-column: 6 span;
@@ -16,7 +16,6 @@
         height: 220px;
     }
     &__text {
-        margin-bottom: 38px;
         width: 540px;
         font-size: 24px;
         line-height: 130%;
@@ -24,7 +23,7 @@
     &__card-btn {
         position: absolute;
         left: 30px;
-        top: 136px;
+        top: 132px;
     }
     .swiper-container3 {
         overflow: hidden;

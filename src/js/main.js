@@ -29,7 +29,7 @@ let mySwiper = new Swiper(slider, {
 })
 
 let mySwiper2 = new Swiper(slider2, {
-    slidesPerView: 3,
+    slidesPerView: "auto",
     spaceBetween: 32,
 
     navigation: {

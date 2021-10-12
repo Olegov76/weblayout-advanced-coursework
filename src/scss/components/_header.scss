@@ -91,6 +91,7 @@
         &__right {
             align-items: center;
             margin-right: -10px;
+            padding: 16px 0;
         }
         &__select-box {
             align-items: center;
@@ -150,7 +151,7 @@
             align-items: center;
             justify-content: space-between;
             padding-top: 32px;
-            padding-bottom: 28px;
+            padding-bottom: 30px;
         }
         &__list-items2:not(:last-child) {
             margin-right: 67px;
