@@ -94,7 +94,7 @@
     .swiper-button-prev,
     .swiper-button-next {
         position: static;
-        transition: .3s ease-in-out;
+        transition: fill .3s ease-in-out, stroke .3s ease-in-out;
         width: 32px;
         height: 32px;
     }
@@ -113,39 +113,35 @@
     .swiper-button-prev:hover .swiper-btn-icon {
         stroke: var(--color-white);
         fill: var(--color-purple);
-        stroke-width: 2px;
     }
     .swiper-button-next:hover .swiper-btn-icon {
         stroke: var(--color-white);
         fill: var(--color-purple);
-        stroke-width: 2px;
     }
     .swiper-button-prev:focus .swiper-btn-icon {
         stroke: var(--color-white);
         fill: var(--color-purple-hover);
-        stroke-width: 2px;
     }
     .swiper-button-next:focus .swiper-btn-icon {
         stroke: var(--color-white);
         fill: var(--color-purple-hover);
-        stroke-width: 2px;
     }
     .swiper-button-prev:active .swiper-btn-icon {
         stroke: var(--color-white);
         fill: var(--color-primary_shade);
-        stroke-width: 2px;
     }
     .swiper-button-next:active .swiper-btn-icon {
         stroke: var(--color-white);
         fill: var(--color-primary_shade);
-        stroke-width: 2px;
     }
     .slider-top {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 26px;
     }
     .swiper-button-box {
         display: flex;
+        padding-top: 26px;
     }
 }

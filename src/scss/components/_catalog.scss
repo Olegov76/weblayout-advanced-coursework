@@ -1,5 +1,8 @@
 .catalog {
     margin-bottom: 65px;
+    &__title {
+        margin-bottom: 26px;
+    }
     &__card {
         position: relative;
         border-radius: 10px;
@@ -42,7 +45,7 @@
         fill: none;
         stroke-width: 2px;
         stroke: var(--color-purple);
-        transition: .3s ease-in-out;
+        transition: fill .3s ease-in-out, stroke.3s ease-in-out;
     }
     &__link-content {
         margin-right: 5px;
@@ -57,8 +60,6 @@
         content: "";
         height: 2px;
         width: 0%;
-        -webkit-transition: width .3s ease-in-out;
-        -moz--transition: width .3s ease-in-out;
         transition: width .3s ease-in-out;
     }
     &__link-link:hover .catalog__link-icon {

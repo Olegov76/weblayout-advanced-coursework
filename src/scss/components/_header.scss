@@ -6,7 +6,7 @@
             color: var(--color-purple);
             background-color: inherit;
             font-size: 16px;
-            transition: 0.5s linear;
+            transition: color 0.5s linear;
         }
         .choices__inner:hover {
             color: var(--color-purple-hover);
@@ -102,7 +102,7 @@
             align-items: center;
             font-size: 14px;
             color: var(--color-secondary);
-            transition: .3s ease-in-out;
+            transition: color .3s ease-in-out;
             line-height: 22px;
         }
         &__phone-link:hover {
@@ -127,7 +127,7 @@
             transition: .3s ease-in-out;
         }
         &__nav-link {
-            transition: .3s ease-in-out;
+            transition: color .3s ease-in-out;
             font-size: 14px;
             padding: 1px 10px;
             color: var(--color-grey);
@@ -160,7 +160,7 @@
             font-size: 16px;
             color: var(--color-black);
             padding: 3px 12px;
-            transition: .3s ease-in-out;
+            transition: color .3s ease-in-out;
         }
         &__nav-link2:hover {
             color: var(--color-purple);
@@ -197,7 +197,7 @@
             border-bottom-left-radius: 10px;
             border-top-left-radius: 10px;
             background-color: var(--color-grey_ligth);
-            transition: .3s ease-in-out;
+            transition: color .3s ease-in-out;
         }
         &__form:hover {
             background-color: var(--color-md_grey);
@@ -224,7 +224,7 @@
             stroke-width: 2px;
             width: 40px;
             height: 32px;
-            transition: .3s ease-in-out;
+            transition: fill .3s ease-in-out, stroke .3s ease-in-out;
         }
         &__form-btn:hover {
             fill: var(--color-purple);
@@ -245,7 +245,7 @@
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
                 color: var(--color-purple);
-                transition: .3s ease-in-out;
+                transition: color .3s ease-in-out;
             }
             .choices__placeholder {
                 opacity: 1;
@@ -318,7 +318,7 @@
             width: 26px;
             height: 28px;
             fill: var(--color-purple);
-            transition: .3s ease-in-out;
+            transition: fill .3s ease-in-out;
         }
         &__form-user:hover {
             fill: var(--color-purple-hover);
