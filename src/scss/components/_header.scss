@@ -6,7 +6,7 @@
             color: var(--color-purple);
             background-color: inherit;
             font-size: 16px;
-            transition: color 0.5s linear;
+            transition: color 0.3s ease-in-out;
         }
         .choices__inner:hover {
             color: var(--color-purple-hover);
@@ -123,8 +123,8 @@
             margin-right: 2px;
             width: 19px;
             height: 19px;
-            fill: #ff862f;
-            transition: .3s ease-in-out;
+            fill: currentColor;
+            transition: fill .3s ease-in-out;
         }
         &__nav-link {
             transition: color .3s ease-in-out;
@@ -183,33 +183,40 @@
             justify-content: space-between;
         }
         &__search {
-            margin-top: 5px;
             width: 20px;
             height: 20px;
         }
         &__form {
+            position: relative;
             display: flex;
             align-items: center;
-            padding: 0 30px;
-            padding-right: 27px;
             width: 761px;
+            padding-left: 57px;
             border: solid 2px transparent;
             border-bottom-left-radius: 10px;
             border-top-left-radius: 10px;
             background-color: var(--color-grey_ligth);
             transition: color .3s ease-in-out;
         }
+        &__span-search {
+            fill: var(--color-grey);
+        }
         &__form:hover {
             background-color: var(--color-md_grey);
         }
         &__form:focus-within {
             border: solid 2px var(--color-purple);
+            .header__span-search {
+                fill: var(--color-purple);
+            }
         }
         &__form:active {
             background-color: var(--color-grey_ligth);
         }
         &__span-search {
-            margin-right: 9px;
+            position: absolute;
+            left: 31px;
+            top: 16px;
         }
         &__input-search {
             outline: none;
@@ -219,6 +226,9 @@
             background-color: transparent;
         }
         &__form-btn {
+            position: absolute;
+            top: 11px;
+            right: 25px;
             fill: none;
             stroke: var(--color-purple);
             stroke-width: 2px;
